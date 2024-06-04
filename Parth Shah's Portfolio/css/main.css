@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --mainTextColor:#fff;
+    --secondaryTextColor:#adb0b1;
+    --mainLinkColor:rgb(255, 0, 127);
+    --mainBorderColor:#2b3031;
+    --mainBgColor:#131415;
+}
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    
+}
+
+body{
+    background-color: var(--mainBgColor);            
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 525;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#margins{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 1em;
+    /*sets parameters of how wide the block of information can go*/
+}
+    
+#profile-pic{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    /*sets the size of profile and also gives it a radius*/
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+    /*space between words*/
+}
+
+
+#links a{
+    font-weight: 325;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+    /*specifying font and color of words, also leads to hover transition*/
+} 
+
+
+#links a:hover{
+    font-weight: 150;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+    /*font and new color of words after hover transition*/
+}
+
+.project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+    /*sets borderss and space betwwen text and border*/
+}
+
+.project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+    /*sets project text's color and defines transition time*/
+}
+
+.project a:hover{
+    color: rgb(255, 0, 127);
+    /*sets the new colot after a project has been hovered on*/
+}
+
+.information{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+    /*sets margins and makes borders between information*/
+}
+
+.border{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+    /*sets border between sections*/
+}
+}
